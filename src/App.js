@@ -56,7 +56,7 @@ class App extends Component {
          <Layout>
              <Titulo/>
              <Productos
-                 agregarAlCarro={ () => this.agregarAlCarro }
+                 agregarAlCarro={() => this.agregarAlCarro}
                  productos = {this.state.productos}
              />
          </Layout>
