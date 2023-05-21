@@ -42,9 +42,11 @@ class App extends Component {
       return this.setState({
             carro: this.state.carro.concat({
                 ...producto,
-                cantidad: 1
-            })
-      })
+            cantidad: 1,
+            }
+            )
+      }
+      )
 
   }
 
@@ -56,7 +58,7 @@ class App extends Component {
          <Layout>
              <Titulo/>
              <Productos
-                 agregarAlCarro={() => this.agregarAlCarro}
+                 agregarAlCarro={this.agregarAlCarro}
                  productos = {this.state.productos}
              />
          </Layout>
