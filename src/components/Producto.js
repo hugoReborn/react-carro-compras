@@ -26,7 +26,7 @@ class Producto extends Component {
 
     render() {
         const { producto, agregarAlCarro } = this.props;
-        console.log(this.props) // aca imprimimos las propiedades para ver si estan apareciendo
+       // console.log(this.props) // aca imprimimos las propiedades para ver si estan apareciendo
         return(
             <div style={styles.producto}>
                 <img style={styles.img} src={producto.img} alt={producto.nombre} width={'150px'}/>

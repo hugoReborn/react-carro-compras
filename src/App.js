@@ -20,11 +20,12 @@ import Navbar from './components/Navbar';
 class App extends Component {
   state = {
     productos:[
-      {nombre: 'Tomate', precio: 1500, img: '/productos/tomate.jpeg'},
-      {nombre: 'Lechuga', precio: 500, img: '/productos/lechuga.jpg'},
-      {nombre: 'Arvejas', precio: 2000, img: '/productos/arvejas.jpg'},
+      {nombre: 'Tomate', precio: '$ 1.500', img: '/productos/tomate.jpeg'},
+      {nombre: 'Lechuga', precio: '$ 500', img: '/productos/lechuga.jpg'},
+      {nombre: 'Tomate Jumbo', precio: '$ 5.000', img: '/productos/tomate.jpeg'},
     ],
     carro: [],
+    esCarroVisible: false,
   }
 
   agregarAlCarro = (producto) => {
@@ -43,18 +44,27 @@ class App extends Component {
             carro: this.state.carro.concat({
                 ...producto,
             cantidad: 1,
-            }
-            )
-      }
-      )
+            })
+      })
 
+  }
+// debemos pasar mostrar carro a navbar para que navbar se lo pase a carro y carro lo muestre
+  mostarCarro = () => {
+      if(!this.state.carro.length === 0){
+          return
+      }
+      this.setState({esCarroVisible: !this.state.esCarroVisible}) // esta linea indica que si es falso se vuelve
+      // verdadero y viceversa
   }
 
   render() {
-      console.log(this.state.carro)
+    const { esCarroVisible } = this.state
+
     return (
      <div>
-         <Navbar/>
+         <Navbar carro={this.state.carro}
+                 esCarroVisible={esCarroVisible}
+                 mostrarCarro={this.mostarCarro}/>
          <Layout>
              <Titulo/>
              <Productos
