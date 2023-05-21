@@ -1,70 +1,28 @@
-# Getting Started with Create React App
+# Proyecto Carro de Compras.
+- El proyecto consiste en un carro de compras que permite agregar productos al carro de compras 
+- visualizar la cantidad de productos en el carro por medio de un boton 
+- generar un icono que muestre la cantidad de productos hasta el numero 9 y luego mostrar un 9+
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Comenzando.
+### Pantalla de inicio.
 
-## Available Scripts
+![img.png](img.png)
 
-In the project directory, you can run:
+- al presionar el boton agregar al carro se agrega el producto al carro de compras y se muestra la cantidad de productos en el carro de compras.
 
-### `npm start`
+### Agregando un producto.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+![img_1.png](img_1.png)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Carro con un producto agregado.
+![img_2.png](img_2.png)
 
-### `npm test`
+### Carro con mas de 9 productos agregados.
+![img_4.png](img_4.png)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- al presionar el boton del carro de compras se muestra el listado de productos agregados al carro de compras.
 
-### `npm run build`
+![img_3.png](img_3.png)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+### Mostrando mas de 9 productos agregados.
+![img_5.png](img_5.png)
